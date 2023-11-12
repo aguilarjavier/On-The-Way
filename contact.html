@@ -34,24 +34,69 @@
 				</div>
 				<i class="fa fa-bars" onclick="showMenu()"></i>
 			</nav>
-			<h1>About Us</h1>
+			<h1>Contact Us</h1>
 		</section>
-
-		<!-- ---------- About Us Content -----------  -->
-		<section class="about-us">
+		<!-- -------Contact Us------ -->
+		<section class="location">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3545.606532065383!2d-80.36075369999999!3d27.2942002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dee95966e0b5c9%3A0x462a67682e320e59!2s462%20SW%20Carter%20Ave%2C%20Port%20St.%20Lucie%2C%20FL%2034983!5e0!3m2!1sen!2sus!4v1699766868805!5m2!1sen!2sus"
+				width="600"
+				height="450"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+		</section>
+		<section class="contact-us">
 			<div class="row">
-				<div class="about-col">
-					<h1>Our Bus Is Always On Time</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat
-					</p>
-					<a href="contact.html" class="hero-btn red-btn">Contact Us!</a>
+				<div class="contact-col">
+					<div>
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<span>
+							<h5>462 SW Carter Ave.</h5>
+							<p>Port Saint Lucie, Florida</p>
+						</span>
+					</div>
+					<div>
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<span>
+							<h5>772 251 8836</h5>
+							<p>Monday to Friday, 7am to 5pm</p>
+						</span>
+					</div>
+
+					<div class="email">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<span>
+							<h5 class="email">busontimePSL@gmail.com</h5>
+							<p>Feel free to email us!</p>
+						</span>
+					</div>
 				</div>
-				<div class="about-col">
-					<img src="images/LOGO BUS ON TIME.png" alt="" />
+				<div class="contact-col">
+					<form action="form-handler.php" method="post">
+						<input
+							type="text"
+							name="name"
+							placeholder="Enter your Name"
+							required
+						/>
+						<input
+							type="text"
+							name="email"
+							placeholder="Enter your email address"
+							required
+						/>
+						<input
+							type="text"
+							name="subject"
+							placeholder="Enter your subject"
+							required
+						/>
+						<textarea rows="8" placeholder="Message" required></textarea>
+						<button type="submit" class="hero-btn red-btn">Send Message</button>
+					</form>
 				</div>
 			</div>
 		</section>
@@ -73,6 +118,7 @@
 				<i class="fa fa-linkedin" aria-hidden="true"></i>
 			</dev>
 		</section>
+
 		<script>
 			var navLinks = document.getElementById("navLinks");
 			function showMenu() {
